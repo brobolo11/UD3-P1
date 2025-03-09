@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #4E5152;
+  font-family: "Rock Salt", cursive;
+}
+
+.main-container {
+  flex: 1;
+}
+
+header {
+  padding: 20px;
+}
+
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #000;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #333333;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.tarjeta-cancion {
+  background-color: #666666;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+footer .fw-bold {
+    color: #000000;
+}
+
+
+.custom-audio {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+}
+
+.custom-audio audio {
+    width: 100%;
+}
+
+.custom-audio button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.titulo-cancion {
+    flex: 1;
+    margin-right: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cancion1 .custom-audio {
+    width: auto;
+    display: inline-block;
+}

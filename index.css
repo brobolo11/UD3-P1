@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/israelB.jpg");
+  background-size: cover;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+  padding: 20px;
+}
+
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  color: #000;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #333333;
+}
+
+main {
+  flex: 1;
+}
+
+main h1 {
+  font-size: 60px;
+  color: #000;
+}
+
+.iconos a img {
+  width: 40px;
+  height: 40px;
+}
+
+
+footer .fw-bold {
+  color: #000000;
+}
