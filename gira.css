@@ -67,6 +67,10 @@ main{
   border-radius: 15px;
 }
 
-footer .fw-bold {
-  color: #000000;
+.iconos{
+  width: 10%;
+}
+
+i.bi{
+  font-size: 2.5rem;
 }
