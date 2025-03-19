@@ -37,10 +37,23 @@ main {
 .navbar-light .navbar-nav .nav-link {
   color: #000000;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #333333;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+.nav-item p{
+  color: white;
 }
 
 .title-rect {
@@ -69,7 +82,7 @@ main {
 }
 
 .btn-comprar {
-  background-color: #91c95c;
+  background-color: #8f8f8f;
   color: #000;
   border: none;
   border-radius: 5px;
@@ -80,10 +93,11 @@ main {
   top: 50%;
   transform: translateY(-50%);
   width: 20%;
+  transition: all 0.3s;
 }
 
 .btn-comprar:hover {
-  background-color: #518d19;
+  background-color: #bdbdbd;
 }
 
 #listaConciertos {
@@ -95,6 +109,10 @@ main {
   max-width: 100%;
   height: auto;
   border-radius: 15px;
+}
+
+iframe{
+  margin-left: -15%;
 }
 
 .iconos {
@@ -112,24 +130,25 @@ i.bi {
 }
 
 @media (max-width: 768px) {
-  iframe {
-    display: none;
+  #contenedorGira{
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+  #contenedorGira p, .btn-comprar{
+    font-size: 0.5rem;
   }
 }
 
-/* Estilos para la sección de eventos */
-.event-section {
-  text-align: center;
-  margin-top: 40px;
-  color: white;
-}
-
-.event-title {
-  font-size: 1.5rem;
-}
-
-#contador {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #ffcc00;
+@media (max-width: 991px) {
+  #contenedorGira{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 15%;
+  }
+  iframe{
+    height: 30%;
+  }
 }
