@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: #4E5152;
-  font-family: "Rock Salt", cursive;
+  font-family: "Rock Salt";
 }
 
 .main-container {
@@ -49,13 +49,8 @@ header {
   padding: 10px 15px;
   border-radius: 5px;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
-
-footer .fw-bold {
-    color: #000000;
-}
-
 
 .custom-audio {
     position: relative;
@@ -99,4 +94,16 @@ footer .fw-bold {
 
 i.bi{
   font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .tarjeta-cancion {
+    font-size: 0.45rem;
+  }
+}
+
+@media (max-width: 768px){
+  i.bi{
+    font-size: 1.5rem;
+  }
 }

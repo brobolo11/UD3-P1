@@ -62,3 +62,9 @@ i.bi{
     background-image: url("images/fondoMovil.jpg");
   }
 }
+
+@media (max-width: 768px){
+  i.bi{
+    font-size: 1.5rem;
+  }
+}
